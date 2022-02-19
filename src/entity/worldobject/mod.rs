@@ -1,3 +1,6 @@
+pub mod building;
+pub mod decoration;
+
 pub struct WorldObject;
 
 impl WorldObject {

@@ -38,4 +38,6 @@ src/
             mod.rs
         character/
             mod.rs
-    
+
+The code for graphics will be right next to code for movement. Well quite close at least. They should be somewhat separated but everything is in src/
+Model-view-control is the key idea of a terraformer app. You should make changes to the backend state, which is then detected by the controller observer which then updates the frontend state. At every tick, dt.
