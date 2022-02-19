@@ -5,19 +5,32 @@
 // by grouping them up. They will then be useful for base views
 // ! we dont care too much about this rn though
 
+use super::Combatant;
+use super::CombatantInfo;
+use super::Displaceable;
+
 pub struct TeamInfo;
 
 // Actions a team can take, e.g. attack an entity (team or worldobj), defend a position (current pos), move to a position (mouse click x,y)
 // When attacking/defending, doing so to an attackable/defendable
-pub trait TeamAction {
-    fn attack(&self, attackee: &dyn TeamAction);
-    fn defend(&self, attacker: &dyn TeamAction);
-    fn move_to(&self, pos: (f32, f32));
-}
 
 pub struct CoilgunTeam {
-    info: TeamInfo,
+    combat_info: CombatantInfo,
+    meta_info: TeamInfo,
 }
+
+impl Combatant for CoilgunTeam {
+    fn attack(&self, combatant: &dyn Combatant) {
+        combatant.defend(self);
+    }
+
+    // this is where the real logic is
+    fn defend(&self, combatant: &dyn Combatant) {
+        // take dmg
+        // combat_info.take_dmg(combatant.get_att());
+    }
+}
+
 pub struct RailgunTeam {
     info: TeamInfo,
 }
