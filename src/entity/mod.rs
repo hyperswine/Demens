@@ -14,3 +14,5 @@ pub trait Combatant {
 pub trait Displaceable {
     fn move_to(&self, coords: (f32, f32));
 }
+
+pub struct Entity {}
