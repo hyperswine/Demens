@@ -1,6 +1,6 @@
 pub mod game_controller;
 
-fn tick() {
+pub fn tick() {
     // increment by dt
 
     // update all the entity states for the game controller

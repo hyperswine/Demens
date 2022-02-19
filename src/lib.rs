@@ -1,5 +1,5 @@
-pub(crate) mod base;
-pub(crate) mod entity;
-pub(crate) mod game_manager;
-pub(crate) mod level;
-pub(crate) mod view;
+pub mod base;
+pub mod entity;
+pub mod game_manager;
+pub mod level;
+pub mod view;

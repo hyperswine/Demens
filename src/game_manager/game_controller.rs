@@ -6,8 +6,16 @@
 
 use crate::entity::Entity;
 
-struct GameController {
+pub struct GameController {
     observed_entities: Vec<Entity>,
+}
+
+impl GameController {
+    pub fn new() -> Self {
+        Self {
+            observed_entities: vec![Entity {}],
+        }
+    }
 }
 
 // attach game controller as a listener to an entity's state
