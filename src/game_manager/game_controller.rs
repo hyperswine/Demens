@@ -4,6 +4,7 @@
 // * So the updates are queued for each entity. On the next tick, game controller checks entity update queue, goes to those entities and fetches the new state
 // Then makes a render call using the new state
 
+use super::DELTA_TIME;
 use crate::entity::Entity;
 
 pub struct GameController {
@@ -15,6 +16,11 @@ impl GameController {
         Self {
             observed_entities: vec![Entity {}],
         }
+    }
+
+    pub fn get_delta_time() {
+        DELTA_TIME.try_lock();
+        // DELTA_TIME.get_mut().unwrap()
     }
 }
 

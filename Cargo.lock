@@ -423,6 +423,7 @@ dependencies = [
 name = "demens3d"
 version = "0.1.0"
 dependencies = [
+ "lazy_static",
  "terraformer3d",
 ]
 
