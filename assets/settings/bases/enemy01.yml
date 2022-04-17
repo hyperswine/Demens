@@ -1,0 +1,14 @@
+enemy01:
+  coords: "0, 1"
+  # base layout
+  base_layout:
+    size: "10, 10"
+    town_hall:
+      position: "0, 0"
+      level: 1
+      xp_gain: 15
+    armory:
+      position: "1, 1"
+      level: 1
+      units: "default"
+      xp_gain: 5

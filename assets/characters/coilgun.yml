@@ -1,0 +1,10 @@
+# 1 coilgun, not a coilgun team
+coilgun:
+  level_1:
+    hp: 10
+    fire_rate: 1 
+    attack: 1
+  level_2:
+    hp: 15
+    fire_rate: 1.4
+    attack: 1.2

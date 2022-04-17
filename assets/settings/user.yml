@@ -1,0 +1,9 @@
+# base
+base:
+  level: 1
+# units
+units:
+# map
+map:
+  - coords: "0, 1"
+    enemy: 

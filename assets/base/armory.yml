@@ -1,0 +1,7 @@
+armory:
+  level_1:
+    requires:
+      - town_hall: "level_1"
+  level_2:
+    requires:
+      - town_hall: "level_2"
