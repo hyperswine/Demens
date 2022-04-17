@@ -2,7 +2,7 @@
 // Basically a scene with multiple entities.
 // Things like units come in multiple characters. Their config will be stored in entity/groups
 
-use crate::entity::worldobject::building::Building;
+use terraformer3d::entity::worldobject::building::Building;
 
 pub struct Base {
     // must be unique and have a radius of max(rad, 5/"control radius")
