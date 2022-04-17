@@ -7,5 +7,5 @@ version = "0.1.0"
 
 [dependencies]
 lazy_static = "*"
-terraformer3d = "0.1.0"
+terraformer3d = { git = "https://github.com/SpectralProject/terraformer-3d.git", branch = "main" }
 blend = "*"

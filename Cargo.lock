@@ -1465,8 +1465,7 @@ dependencies = [
 [[package]]
 name = "terraformer3d"
 version = "0.1.0"
-source = "registry+https://github.com/rust-lang/crates.io-index"
-checksum = "76e80a8536ce7864ea363c52cf32ebe806a612ec60844606ade361ba77f9cecc"
+source = "git+https://github.com/SpectralProject/terraformer-3d.git?branch=main#89a0a4c8b213e39f95cd99b20f52dc55a275c37e"
 dependencies = [
  "cgmath",
  "env_logger",
